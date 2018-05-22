@@ -71,7 +71,7 @@ public class ShardingJdbcMybatisTest {
         userService.transactionTestSucess();    
     }    
         
-    @Test(expected = IllegalAccessException.class)    
+    @Test   
     public void testTransactionTestFailure() throws IllegalAccessException{    
         userService.transactionTestFailure();    
     }    

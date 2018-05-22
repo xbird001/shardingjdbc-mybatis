@@ -56,13 +56,19 @@ public class UserServiceImpl implements UserService {
     
     @Transactional(propagation=Propagation.REQUIRED)    
     public void transactionTestFailure() throws IllegalAccessException {    
-        User u = new User();    
+/*        User u = new User();    
         u.setUserId(13);    
         u.setAge(25);    
         u.setName("war3 1.27 good");    
-        userMapper.insert(u);    
-            
+        userMapper.insert(u);   */ 
+    	
         Student student = new Student();    
+        student.setStudentId(20);    
+        student.setAge(20);    
+        student.setName("hehe1");    
+        studentMapper.insert(student);   
+            
+        student = new Student();    
         student.setStudentId(21);    
         student.setAge(21);    
         student.setName("hehe1");    
